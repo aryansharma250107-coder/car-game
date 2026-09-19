@@ -1,20 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Car Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Arena</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
 </head>
+
 <body>
 
-    <h1>🚗 Car Game</h1>
+    <nav>
+        <div class="logo">BATTLE<span>ARENA</span></div>
 
-    <div id="game">
-        <div id="car"></div>
-        <div id="enemy"></div>
-    </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#modes">Modes</a>
+            <a href="#characters">Characters</a>
+            <a href="#download">Download</a>
+        </div>
 
-    <p>Use ⬅️ ➡️ to move</p>
+        <button class="download-btn">PLAY NOW</button>
+    </nav>
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <p class="small-title">WELCOME TO THE BATTLE</p>
+
+            <h1>
+                SURVIVE.<br>
+                <span>FIGHT.</span><br>
+                WIN.
+            </h1>
+
+            <p class="description">
+                Enter the battlefield, choose your character,
+                collect weapons and become the last survivor.
+            </p>
+
+            <button class="play-btn" onclick="startGame()">
+                ▶ PLAY NOW
+            </button>
+        </div>
+
+        <div class="character">
+            🧑‍🎤
+        </div>
+
+    </section>
+
+    <section id="modes" class="section">
+
+        <h2>GAME MODES</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">⚔️</div>
+                <h3>Battle Royale</h3>
+                <p>Fight against other players and survive.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔫</div>
+                <h3>Team Deathmatch</h3>
+                <p>Join your squad and defeat the enemy team.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏆</div>
+                <h3>Ranked</h3>
+                <p>Compete and climb the leaderboard.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="characters" class="section characters">
+
+        <h2>CHOOSE YOUR FIGHTER</h2>
+
+        <div class="fighters">
+
+            <div class="fighter">
+                <div class="fighter-image">🥷</div>
+                <h3>SHADOW</h3>
+                <p>Speed Specialist</p>
+            </div>
+
+            <div class="fighter">
+                <div class="fighter-image">🦾</div>
+                <h3>TITAN</h3>
+                <p>Heavy Warrior</p>
+            </div>
+
+            <div class="fighter">
+                <div class="fighter-image">🔥</div>
+                <h3>PHOENIX</h3>
+                <p>Fire Expert</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="download" class="download-section">
+
+        <h2>READY FOR BATTLE?</h2>
+
+        <p>Join the arena and start your adventure.</p>
+
+        <button class="play-btn" onclick="startGame()">
+            DOWNLOAD GAME
+        </button>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Battle Arena | Fan-made gaming website</p>
+    </footer>
 
     <script src="game.js"></script>
+
 </body>
 </html>

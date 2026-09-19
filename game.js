@@ -1,16 +1,15 @@
-let car = document.getElementById("car");
+function startGame() {
+    alert("🔥 Welcome to Battle Arena! Get ready for battle!");
+}
 
-let position = 175;
+window.addEventListener("scroll", function () {
 
-document.addEventListener("keydown", function(event) {
+    const nav = document.querySelector("nav");
 
-    if (event.key === "ArrowLeft" && position > 0) {
-        position -= 20;
+    if (window.scrollY > 50) {
+        nav.style.background = "#050505";
+    } else {
+        nav.style.background = "#111";
     }
 
-    if (event.key === "ArrowRight" && position < 350) {
-        position += 20;
-    }
-
-    car.style.left = position + "px";
 });

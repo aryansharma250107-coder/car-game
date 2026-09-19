@@ -1,19 +1,163 @@
-#enemy {
-    width: 50px;
-    height: 90px;
-    background: blue;
-    position: absolute;
-    left: 100px;
+/* HERO ANIMATION */
 
-    animation: enemyMove 2s linear infinite;
+.hero-content {
+    animation: slideIn 1.2s ease;
 }
 
-@keyframes enemyMove {
+@keyframes slideIn {
     from {
-        top: -100px;
+        opacity: 0;
+        transform: translateX(-100px);
     }
 
     to {
-        top: 600px;
+        opacity: 1;
+        transform: translateX(0);
     }
+}
+
+
+/* CHARACTER FLOAT */
+
+.character {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* PLAY BUTTON GLOW */
+
+.play-btn {
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #ff6a00;
+    }
+
+    50% {
+        box-shadow: 0 0 30px #ff6a00;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #ff6a00;
+    }
+}
+
+
+/* CARD ANIMATION */
+
+.card {
+    animation: cardShow 1s ease;
+}
+
+@keyframes cardShow {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* CARD HOVER */
+
+.card:hover {
+    transform: translateY(-15px) scale(1.05);
+    transition: 0.4s;
+}
+
+
+/* FIGHTER ANIMATION */
+
+.fighter {
+    animation: fighterShow 1s ease;
+}
+
+@keyframes fighterShow {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* FIGHTER HOVER */
+
+.fighter:hover {
+    transform: scale(1.08);
+    transition: 0.4s;
+}
+
+
+/* LOGO ANIMATION */
+
+.logo {
+    animation: logoPulse 2s infinite;
+}
+
+@keyframes logoPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* BACKGROUND ANIMATION */
+
+.hero {
+    background-size: 200% 200%;
+    animation: backgroundMove 8s infinite;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* BUTTON CLICK */
+
+.play-btn:active {
+    transform: scale(0.9);
 }
