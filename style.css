@@ -1,63 +1,11 @@
-/* GAME */
-
-#game {
-    min-height: 100vh;
-    background: #080808;
-    color: white;
+body {
     text-align: center;
-    padding: 20px;
-}
-
-#top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: auto;
-}
-
-#top h2 {
-    color: #ff6a00;
-}
-
-#arena {
-    position: relative;
-    height: 500px;
-    max-width: 1000px;
-    margin: 30px auto;
-    border: 3px solid #ff6a00;
-    background:
-        radial-gradient(circle, #292929 1px, transparent 1px);
-    background-size: 30px 30px;
-    overflow: hidden;
-}
-
-#player,
-#enemy {
-    position: absolute;
-    font-size: 55px;
-}
-
-#player {
-    left: 30px;
-    bottom: 30px;
-}
-
-#enemy {
-    transition: 0.2s;
-}
-
-#shoot {
-    padding: 15px 35px;
-    background: #ff6a00;
+    font-family: Arial;
+    background: #222;
     color: white;
-    border: none;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
 }
 
-#shoot:hover {
-    background: #ff3300;
-    transform: scale(1.08);
+canvas {
+    background: black;
+    border: 3px solid white;
 }
