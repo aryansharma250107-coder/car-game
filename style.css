@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    background: lightgreen;
+}
+
+#game {
+    width: 400px;
+    height: 600px;
+    background: gray;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#car {
+    width: 50px;
+    height: 90px;
+    background: red;
+    position: absolute;
+    bottom: 20px;
+    left: 175px;
+}
+
+#enemy {
+    width: 50px;
+    height: 90px;
+    background: blue;
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
