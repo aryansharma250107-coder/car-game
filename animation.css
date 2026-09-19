@@ -1,0 +1,19 @@
+#enemy {
+    width: 50px;
+    height: 90px;
+    background: blue;
+    position: absolute;
+    left: 100px;
+
+    animation: enemyMove 2s linear infinite;
+}
+
+@keyframes enemyMove {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 600px;
+    }
+}
